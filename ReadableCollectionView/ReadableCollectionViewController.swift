@@ -1,5 +1,5 @@
 //
-//  InnusViewController.swift
+//  ReadableCollectionViewController.swift
 //  ReadableCollectionView
 //
 //  Created by Kohei Hayashi on 2021/04/27.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-final class InnusViewController: UIViewController {
+final class ReadableCollectionViewController: UIViewController {
     private let collectionView = UICollectionView(frame: .zero,
                                                   collectionViewLayout: UICollectionViewFlowLayout())
 
@@ -35,9 +35,9 @@ final class InnusViewController: UIViewController {
     }
 }
 
-extension InnusViewController: UICollectionViewDataSource {
+extension ReadableCollectionViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        30
+        Int.random(in: (1...30))
     }
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -47,7 +47,7 @@ extension InnusViewController: UICollectionViewDataSource {
     }
 }
 
-extension InnusViewController: UICollectionViewDelegateFlowLayout {
+extension ReadableCollectionViewController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView,
                         layout collectionViewLayout: UICollectionViewLayout,
                         sizeForItemAt indexPath: IndexPath) -> CGSize {

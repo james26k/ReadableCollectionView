@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		55A9D6CA263849E300DA3855 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55A9D6C9263849E300DA3855 /* AppDelegate.swift */; };
-		55A9D6CE263849E300DA3855 /* InnusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55A9D6CD263849E300DA3855 /* InnusViewController.swift */; };
+		55A9D6CE263849E300DA3855 /* ReadableCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55A9D6CD263849E300DA3855 /* ReadableCollectionViewController.swift */; };
 		55A9D6D3263849E800DA3855 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55A9D6D2263849E800DA3855 /* Assets.xcassets */; };
 		55A9D6D6263849E800DA3855 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55A9D6D4263849E800DA3855 /* LaunchScreen.storyboard */; };
 		55A9D6E1263849E800DA3855 /* ReadableCollectionViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55A9D6E0263849E800DA3855 /* ReadableCollectionViewTests.swift */; };
@@ -35,7 +35,7 @@
 /* Begin PBXFileReference section */
 		55A9D6C6263849E300DA3855 /* ReadableCollectionView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReadableCollectionView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		55A9D6C9263849E300DA3855 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		55A9D6CD263849E300DA3855 /* InnusViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InnusViewController.swift; sourceTree = "<group>"; };
+		55A9D6CD263849E300DA3855 /* ReadableCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadableCollectionViewController.swift; sourceTree = "<group>"; };
 		55A9D6D2263849E800DA3855 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		55A9D6D5263849E800DA3855 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		55A9D6D7263849E800DA3855 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -95,7 +95,7 @@
 		55A9D6C8263849E300DA3855 /* ReadableCollectionView */ = {
 			isa = PBXGroup;
 			children = (
-				55A9D6FD26384D1300DA3855 /* InnusModule */,
+				55A9D6CD263849E300DA3855 /* ReadableCollectionViewController.swift */,
 				55A9D6C9263849E300DA3855 /* AppDelegate.swift */,
 				55A9D6D2263849E800DA3855 /* Assets.xcassets */,
 				55A9D6D4263849E800DA3855 /* LaunchScreen.storyboard */,
@@ -120,14 +120,6 @@
 				55A9D6ED263849E800DA3855 /* Info.plist */,
 			);
 			path = ReadableCollectionViewUITests;
-			sourceTree = "<group>";
-		};
-		55A9D6FD26384D1300DA3855 /* InnusModule */ = {
-			isa = PBXGroup;
-			children = (
-				55A9D6CD263849E300DA3855 /* InnusViewController.swift */,
-			);
-			path = InnusModule;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,7 +251,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				55A9D6CE263849E300DA3855 /* InnusViewController.swift in Sources */,
+				55A9D6CE263849E300DA3855 /* ReadableCollectionViewController.swift in Sources */,
 				55A9D6CA263849E300DA3855 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
