@@ -58,9 +58,9 @@ extension ReadableCollectionViewController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView,
                         layout collectionViewLayout: UICollectionViewLayout,
                         insetForSectionAt section: Int) -> UIEdgeInsets {
-        let sectionSideMargin: CGFloat = (view.frame.width - view.readableContentGuide.layoutFrame.width) / 2
-        return .init(top: cellSpacing, left: sectionSideMargin,
-                     bottom: cellSpacing, right: sectionSideMargin)
+        let contentInset: CGFloat = (view.frame.width - view.readableContentGuide.layoutFrame.width) / 2
+        return .init(top: contentInset, left: contentInset,
+                     bottom: contentInset, right: contentInset)
     }
 
     func collectionView(_ collectionView: UICollectionView,
