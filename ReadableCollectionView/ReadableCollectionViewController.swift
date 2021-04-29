@@ -11,7 +11,7 @@ final class ReadableCollectionViewController: UIViewController {
     private let collectionView = UICollectionView(frame: .zero,
                                                   collectionViewLayout: UICollectionViewFlowLayout())
 
-    private let cellSpacing: CGFloat = 10
+    private let itemSpacing: CGFloat = 10
 
     override func loadView() {
         super.loadView()
@@ -51,7 +51,7 @@ extension ReadableCollectionViewController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView,
                         layout collectionViewLayout: UICollectionViewLayout,
                         sizeForItemAt indexPath: IndexPath) -> CGSize {
-        let cellSideLength: CGFloat = (view.readableContentGuide.layoutFrame.width - cellSpacing * 2) / 3
+        let cellSideLength: CGFloat = (view.readableContentGuide.layoutFrame.width - itemSpacing * 2) / 3
         return .init(width: cellSideLength, height: cellSideLength)
     }
 
@@ -67,12 +67,12 @@ extension ReadableCollectionViewController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView,
                         layout collectionViewLayout: UICollectionViewLayout,
                         minimumLineSpacingForSectionAt section: Int) -> CGFloat {
-        cellSpacing
+        itemSpacing
     }
 
     func collectionView(_ collectionView: UICollectionView,
                         layout collectionViewLayout: UICollectionViewLayout,
                         minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
-        cellSpacing
+        itemSpacing
     }
 }
