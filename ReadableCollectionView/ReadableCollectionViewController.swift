@@ -37,7 +37,7 @@ final class ReadableCollectionViewController: UIViewController {
 
 extension ReadableCollectionViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        Int.random(in: (1...30))
+        30
     }
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -58,9 +58,10 @@ extension ReadableCollectionViewController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView,
                         layout collectionViewLayout: UICollectionViewLayout,
                         insetForSectionAt section: Int) -> UIEdgeInsets {
-        let contentInset: CGFloat = (view.frame.width - view.readableContentGuide.layoutFrame.width) / 2
-        return .init(top: contentInset, left: contentInset,
-                     bottom: contentInset, right: contentInset)
+        let topOrBottomInset: CGFloat = (view.frame.height - view.readableContentGuide.layoutFrame.height) / 2
+        let leftOrRightInset: CGFloat = (view.frame.width - view.readableContentGuide.layoutFrame.width) / 2
+        return .init(top: topOrBottomInset, left: leftOrRightInset,
+                     bottom: topOrBottomInset, right: leftOrRightInset)
     }
 
     func collectionView(_ collectionView: UICollectionView,
